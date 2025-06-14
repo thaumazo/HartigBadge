@@ -1,5 +1,3 @@
----
-
 # 🕸️ HartigBadge
 
 **A mycelial approach to recognition.**
@@ -126,6 +124,3 @@ Want to contribute but new to Django? We recommend this excellent series by [@Se
 ## 💡 Why "HartigBadge"?
 
 The **Hartig Net** is the living interface between fungi and plant roots—a woven, dynamic space of mutual benefit. In that spirit, a **HartigBadge** is a record of trust and shared growth—a trace of value exchanged at the living edge of community collaboration.
-
----
-
