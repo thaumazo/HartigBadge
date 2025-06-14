@@ -1,27 +1,134 @@
-# LibreBadge
-## Open source web based ID badge software
-[![issuehunt.io](https://github.com/BoostIO/issuehunt-materials/raw/master/v1/issuehunt-button-v1.svg?sanitize=true)](https://issuehunt.io/r/LibreBadge/LibreBadge)
-<br>
-[![Open Source Helpers](https://www.codetriage.com/librebadge/librebadge/badges/users.svg)](https://www.codetriage.com/LibreBadge/LibreBadge)
-### Application admin user (for development purpose)
-Username: admin Password: admin
-### Community code of conduct
-[CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md)
-### What is this project?
-This project is an open source web based ID badge generator software that is meant to be much faster and smoother than most existing paid ID badge solutions due to it being web based.
-### What was the inspiraton for this project?
-I have had bad experiences with two major ID badge softwares: Datacard ID Centre and HID Asure ID. While using both softwares, I noticed that they would stop responding and lock up for 30 seconds to 2 minutes while performing routine tasks such as switching between badge templates, searching through records (less than 3000) and printing (which takes 30 seconds to 2 minutes to send to the printer after hitting ctrl-p). 
-### Why has this project jumped between 3 languages?
-Initially this project was started in angular dart due to curiosity about the language. Angular dart ended up overcomplicating this project by forcing us to develop a seperate frontend and backend and connect them and I (memtech3) couldn't seem to understand angular dart past making slight UI changes. The project was then moved to PHP as it was widely used and was easy to grasp. Finally, the project was moved to Python Django as it allowed development to move faster as it took care of most of the things that were holding up development on PHP. I (memtech3) the lead project maintainer have little programming experience and am a student and promise to contribute as much as I can and hope that this project benefits many organizations by creating a much faster, smoother and freer software than most ID badge softwares on the market today.
-### How can I learn django so that I can contribute to this project?
-This is the django tutorial series that I have been following to help me learn django for this project
-https://pythonprogramming.net/django-web-development-python-tutorial/
-<br>
-Thank you so much [@sentdex](https://github.com/Sentdex) for creating amazing tutorials. Without them, this project propably wouldn't be here
-<br>
-<br>
-### Credits
-Original ID badge proof of concept and proper print rendering by [@Quantaly](https://github.com/Quantaly)
-New logo form - Kyle Knightly
+Here's a clean and compelling `README.md` for **HartigBadge**, customized to align with **Thaumazo's Community Mycelium** and with clearer tone, purpose, and collaborative invitation:
 
+---
 
+# 🕸️ HartigBadge
+
+**A mycelial approach to recognition.**
+HartigBadge is an open source, web-based badge system for issuing, displaying, and verifying meaningful contributions within networked communities. Designed to interoperate with [Community Mycelium](https://github.com/ThaumazoOrg/CommunityMycelium), it serves as a lightweight, extensible platform for issuing **Open Badges** that mark trust, participation, and symbiotic growth.
+
+> 🌿 *Inspired by the Hartig Net in mycorrhizal systems—where deep exchange between organisms takes place—HartigBadges are digital traces of connection, collaboration, and contribution.*
+
+---
+
+## ✨ Key Features
+
+* 🔖 **Open Badge support** (IMS Global Open Badges 2.1 compliant)
+* 🌐 **Web-based badge creation** and administration
+* 🧩 **Interoperable with Community Mycelium** (users, groups, ACLs)
+* 📄 Print-ready badge layout with proper rendering
+* 🐍 Built with Python & Django for reliability and extensibility
+* 🎨 Easy theming and template customization
+
+---
+
+## 🔧 Development Setup
+
+### Prerequisites
+
+* Python 3.x
+* PostgreSQL
+* Docker or Podman (recommended for development)
+* Node.js + npm (for frontend build, if editing templates)
+
+### Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/ThaumazoOrg/HartigBadge.git
+   cd HartigBadge
+   ```
+
+2. **Create a virtual environment and install dependencies**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+3. **Set up environment variables**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Update database and site config in `.env`.
+
+4. **Run migrations and create an admin user**
+
+   ```bash
+   python manage.py migrate
+   python manage.py createsuperuser
+   ```
+
+5. **Start the development server**
+
+   ```bash
+   python manage.py runserver
+   ```
+
+   Visit `http://localhost:8000` and log in with your admin credentials.
+
+---
+
+## 🧪 Default Admin Credentials (Dev Only)
+
+* **Username**: `admin`
+* **Password**: `admin`
+
+*(Change these in production!)*
+
+---
+
+## 🧬 Project Origins & Evolution
+
+HartigBadge is a fork of [LibreBadge](https://github.com/LibreBadge/LibreBadge), originally created as a fast, lightweight alternative to sluggish proprietary ID badge software like Datacard ID Centre and HID Asure ID.
+
+This version has been refactored and reimagined by **Thaumazo** as part of the **Community Mycelium** project to align with decentralized, symbiotic, and recognition-based approaches to organizational structure and human collaboration.
+
+---
+
+## 🤝 Community & Contributions
+
+We welcome contributions that align with the ethos of trust-building, decentralization, and open knowledge. Whether you're improving badge issuance, adding integrations, or just fixing a bug—your input is valued.
+
+### To contribute:
+
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feat/your-feature`)
+3. Commit your changes
+4. Submit a pull request
+
+See [CODE\_OF\_CONDUCT.md](CODE_OF_CONDUCT.md) for community guidelines.
+
+---
+
+## 🧭 Related Projects
+
+* [Community Mycelium](https://github.com/ThaumazoOrg/CommunityMycelium): user management, meetings, and access control
+* [Hyphae](https://github.com/ThaumazoOrg/Hyphae): semantic linking and data interconnection layer (forthcoming)
+
+---
+
+## 📜 License
+
+TBD — This fork may adopt an **AGPLv3** or **MIT license**, depending on community needs and integration plans. Stay tuned.
+
+---
+
+## 📚 Learning Resources
+
+Want to contribute but new to Django? We recommend this excellent series by [@Sentdex](https://github.com/Sentdex):
+🔗 [https://pythonprogramming.net/django-web-development-python-tutorial/](https://pythonprogramming.net/django-web-development-python-tutorial/)
+
+---
+
+## 💡 Why "HartigBadge"?
+
+The **Hartig Net** is the living interface between fungi and plant roots—a woven, dynamic space of mutual benefit. In that spirit, a **HartigBadge** is a record of trust and shared growth—a trace of value exchanged at the living edge of community collaboration.
+
+---
+
+Would you like help writing the `.env.example`, setting up CI/CD, or crafting a badge issuing API endpoint next?
