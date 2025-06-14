@@ -1,5 +1,3 @@
-Here's a clean and compelling `README.md` for **HartigBadge**, customized to align with **Thaumazo's Community Mycelium** and with clearer tone, purpose, and collaborative invitation:
-
 ---
 
 # 🕸️ HartigBadge
@@ -131,4 +129,3 @@ The **Hartig Net** is the living interface between fungi and plant roots—a wov
 
 ---
 
-Would you like help writing the `.env.example`, setting up CI/CD, or crafting a badge issuing API endpoint next?
